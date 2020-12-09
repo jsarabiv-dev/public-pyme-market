@@ -1,33 +1,13 @@
 # PublicPymesMarket
 
 Project created in free time with educational purposes still in development using good practices and current technologies:
--Angular 9 Framework FrontEnd
--Css3 and Html5 from 0 for the visual structure of the project
--HttpClient libraries, observable to consume the BackEnd APIs Rest
+<li>Angular 9 Framework FrontEnd</li>
+<li>Css3 and Html5 from 0 for the visual structure of the project</li>
+<li>HttpClient libraries, observable to consume the BackEnd APIs Rest</li>
+<li>Angular Routes for loading components via routes</li>
 
 # Architecture Pymes Market
 <a href="https://ibb.co/mzP8t4c"><img src="https://i.ibb.co/9Ydt2Wr/Arquitectura-PM.png" alt="Arquitectura-PM" border="0"></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
