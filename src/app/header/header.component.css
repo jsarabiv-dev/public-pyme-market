@@ -1,0 +1,110 @@
+#header {
+    background: #264653;
+    height: 100px;
+    border-bottom: 2px #06d6a0 solid;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#header-container {
+    grid-template-columns: 10% 60% 30%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#logo-left-home {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#logo-market {
+    background-image: url("/assets/logos/supermercado.svg");
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+#navbar-user-panel {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar-user-panel>ul {
+    width: auto;
+    margin-left: 15px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#navbar-user-panel>ul>li {
+    border: #001c55 solid 1px;
+    width: auto;
+    padding: 7px;
+    margin-right: 15px;
+}
+
+#navbar-user-panel>ul>li>a {
+    color: #f7f7ff;
+}
+
+#box-navbar-bottom {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar-bottom {
+    width: 80%;
+    justify-content: left;
+    margin-left: 60px;
+}
+
+#navbar-bottom>ul>li {
+    border: #001c55 solid 1px;
+    width: auto;
+    padding: 7px;
+    margin-right: 15px;
+    display: inline-flex;
+}
+
+#navbar-bottom>ul>li>a {
+    color: #f7f7ff;
+}
+
+#container-header-search-bar {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+#search-bar-container {
+    height: 70%;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+#input-search-bar {
+    width: 80%;
+    border-radius: 5px;
+    background: #f1faee;
+}
+
+#logo-search-bar {
+    color: gold;
+    align-self: center;
+    margin-left: 5px;
+}
+
+#navbar-user-panel {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}

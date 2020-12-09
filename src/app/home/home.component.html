@@ -1,0 +1,231 @@
+<div id="container-imgs-publ-home">
+    <img src="../../assets/images/home-publicity/publ-img1.webp" alt="" class="img-responsive">
+</div>
+
+
+<div id="container-main-center">
+
+    <div id="box-information-container" class="container-inline-flex">
+
+        <div id="card-information" class="card-inline-flex-column">
+            <img src="../../assets/logos/tarjeta.svg" alt="">
+            <h3>Hasta 12 cuotas sin interés</h3>
+            <a href="news.asp">Ver más</a>
+        </div>
+
+        <div id="card-information" class="card-inline-flex-column">
+            <img src="../../assets/logos/debit_card.svg" alt="">
+            <h3>Tarjeta de débito</h3>
+            <a href="news.asp">Ver más</a>
+        </div>
+
+        <div id="card-information" class="card-inline-flex-column">
+            <img src="../../assets/logos/financiero.svg" alt="">
+            <h3>Efectivo y transferencia</h3>
+            <a href="news.asp">Ver más</a>
+        </div>
+
+        <div id="card-information" class="card-inline-flex-column" style="border-right: none;">
+            <img src="../../assets/logos/anadir(1).svg" alt="">
+            <h3>Más medios de pago</h3>
+            <a href="news.asp">Ver más</a>
+        </div>
+
+    </div>
+
+    <div id="container-main-home-products" class="container-inline-column-flex">
+
+        <div class="box-flex-title">
+            <h2>Ofertas de la semana</h2>
+            <button><a href="news.asp">Ver más</a></button>
+        </div>
+
+        <div class="container-inline-row-flex">
+            <div class="box-product" *ngFor="let product of products">
+                <div>
+                    <div class="box-img-product-home">
+                        <img src="{{product.productImgUrl}}.jpg" alt="">
+                    </div>
+                    <div class="mini-box">
+                        <div style="display: inline-flex">
+                            <p class="price"> ${{ product.productUnitPrice}}</p>
+                            <p class="discount">{{ product.productOffer}}% OFF</p>
+                        </div>
+                        <p class="dues-product"><strong>10 x $20.000 Sin interés</strong>
+                        </p>
+                    </div>
+                    <div id="box-hover-product">
+                        <div id="box-product-name">
+                            <p class="product-name">{{ product.productName}}</p>
+                        </div>
+                        <div id="box-product-buttons">
+                            <div>
+                                <a id="button-deseos-box-product" class="button-deseos" href="#"></a>
+                            </div>
+                            <div>
+                                <a id="button-cart-box-product" class="button-cart" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="box-button-left">
+                <button id="button-left" *ngIf="this.isProductNext;" (click)="onProductOffSlideNext()">Back</button>
+            </div>
+
+            <div id="box-button-next">
+                <button id="button-next" *ngIf="this.isProductNext;" (click)="onProductOffSlideNext()">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="container-main-products-discover">
+
+        <div class="box-flex-title">
+            <h2>Descubre</h2>
+            <button><a href="news.asp">Ver más</a></button>
+        </div>
+        <div id="discover-products-container" class="container-inline-row-flex">
+            <div class="box-inline-flex box_W49" *ngFor="let discover of discoverNews">
+                <div id="card-product-discover" class="card-flex-row">
+                    <div id="mini-box-discover">
+                        <p id="title">{{discover.dnTitle}}</p>
+
+                        <p>{{discover.dnDescription}}</p>
+                        <button id="button-discover">Ver Mas</button>
+                    </div>
+                    <div id="mini-box-img-discover">
+                        <img src="{{discover.dnImgUrl}}" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="container-main-products-discover">
+        <div class="box-flex-title">
+            <h2>Ofertas Flash</h2>
+            <button><a href="news.asp">Ver más</a></button>
+        </div>
+
+        <div id="flash-offert-products-container" class="container-inline-row-flex">
+
+            <div class="box-inline-flex box_W99">
+                <div id="box-flash-offert" class="box box_W49">
+                    <div id="lienzo-box-flash-offert" class="card-flex-column">
+                        <div id="buttons-box-flash-offert">
+                            <div>
+                                <a id="button-deseos-box-flash" class="button-deseos"></a>
+                                <a id="button-cart-box-flash" class="button-cart" href="#"></a>
+                            </div>
+                            <div>
+                                <button class="button-buy">Comprar</button>
+                            </div>
+                        </div>
+                        <div id="content-box-flash-offert" class="card-flex-column">
+                            <div>
+                                <p id="p-discount"> 50%</p>
+                                <p id="p-word"> Descuento </p>
+                            </div>
+                            <div class="box-prices">
+
+                                <p id="p-price-discount">$9.999</p>
+                                <p id="p-price-normal">$15.000</p>
+                            </div>
+                            <div id="box-time-lapse">
+                                <p id="p-word-discount"> Hasta </p>
+                                <p id="p-time-lapse">12-12-2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-flash-offert">
+                    </div>
+                </div>
+
+                <div id="box-flash-offert" class="box box_W49">
+                    <div id="lienzo-box-flash-offert" class="card-flex-column">
+                        <div id="buttons-box-flash-offert">
+                            <div>
+                                <a id="button-deseos"></a>
+                                <a id="button-cart" href="#"></a>
+
+                            </div>
+                            <div>
+                                <button class="button-buy">Comprar</button>
+                            </div>
+                        </div>
+                        <div id="content-box-flash-offert" class="card-flex-column">
+                            <div>
+                                <p id="p-discount"> 50%</p>
+                                <p id="p-word"> Descuento </p>
+                            </div>
+                            <div class="box-prices">
+
+                                <p id="p-price-discount">$9.999</p>
+                                <p id="p-price-normal">$15.000</p>
+                            </div>
+                            <div id="box-time-lapse">
+                                <p id="p-word-discount"> Hasta </p>
+                                <p id="p-time-lapse">12-12-2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-flash-offert">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container-main-discover-pymes">
+            <div class="box-flex-title">
+                <h2>Descubre Pymes</h2>
+                <button><a href="news.asp">Ver más</a></button>
+            </div>
+
+            <div id="container-discover-pymes" class="container-inline-column-flex">
+                <div id="container-pymes" *ngFor="let category of categoriesProduct">
+                    <div id="box-pyme" class="container-inline-row-flex">
+
+                        <div id="box-pyme-img">
+                            <div id="card-pyme-img">
+                                <img src="https://dryttub979mrx.cloudfront.net/imgpyme/94d433afad80baddb66778f63d266570.image.jpeg" style="width: auto; height: 100%;">
+                            </div>
+                        </div>
+
+                        <div id="box-pyme-content">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="container-main-home-all-categories-container">
+            <div class="box-flex-title">
+                <h2>Categorias populares</h2>
+                <button><a href="news.asp">Ver más</a></button>
+            </div>
+
+            <div id="home-all-categories-container" class="container-inline-row-flex">
+                <div id="card-category" *ngFor="let category of categoriesProduct">
+                    <img src="{{category.icon}}.svg" alt="">
+                    <a href="">
+                        <p>{{category.catProd_name}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
