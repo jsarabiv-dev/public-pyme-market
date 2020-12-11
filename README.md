@@ -7,7 +7,7 @@ Project created in free time with educational purposes still in development usin
 <li>Angular Routes for loading components via routes</li>
 
 # Architecture Pymes Market
-<a href="https://ibb.co/mzP8t4c"><img src="https://i.ibb.co/9Ydt2Wr/Arquitectura-PM.png" alt="Arquitectura-PM" border="0"></a>
+<a href="https://ibb.co/S51XsyN"><img src="https://i.ibb.co/S51XsyN/Arquitectura-PM.png" alt="Arquitectura-PM" border="0"></a>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
